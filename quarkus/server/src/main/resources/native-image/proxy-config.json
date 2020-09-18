@@ -1,0 +1,8 @@
+[
+  ["java.sql.CallableStatement"],
+  ["java.sql.Connection"],
+  ["java.sql.PreparedStatement"],
+  ["java.sql.ResultSet"],
+  ["java.sql.Statement"],
+  ["javax.persistence.EntityManager"]
+]

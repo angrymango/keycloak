@@ -17,10 +17,7 @@
 
 package org.keycloak.cli;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.IntFunction;
 
@@ -112,6 +109,9 @@ public class KeycloakQuarkusMain {
     }
 
     public static void addOption(CommandLine.Model.CommandSpec spec, String command, List<PropertyMapper> mappers) {
+        Map<String, CommandLine> subcommands = spec.subcommands();
+        CommandLine commandLine = subcommands.get(command);
+        commandLine.getCommandSpec();
         CommandLine.Model.CommandSpec commandSpec = spec.subcommands().get(command).getCommandSpec();
 
         for (PropertyMapper mapper : mappers) {

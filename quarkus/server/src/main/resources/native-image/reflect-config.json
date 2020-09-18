@@ -1,0 +1,4194 @@
+[
+{
+  "name":"com.arjuna.ats.arjuna.common.CoordinatorEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getCheckedActionFactory","parameterTypes":[] }, 
+    {"name":"getCheckedActionFactoryClassName","parameterTypes":[] }, 
+    {"name":"getCommunicationStore","parameterTypes":[] }, 
+    {"name":"getDefaultTimeout","parameterTypes":[] }, 
+    {"name":"getDynamic1PC","parameterTypes":[] }, 
+    {"name":"getMaxTwoPhaseCommitThreads","parameterTypes":[] }, 
+    {"name":"getTxReaperCancelFailWaitPeriod","parameterTypes":[] }, 
+    {"name":"getTxReaperCancelWaitPeriod","parameterTypes":[] }, 
+    {"name":"getTxReaperMode","parameterTypes":[] }, 
+    {"name":"getTxReaperTimeout","parameterTypes":[] }, 
+    {"name":"getTxReaperZombieMax","parameterTypes":[] }, 
+    {"name":"isAllowCheckedActionFactoryOverride","parameterTypes":[] }, 
+    {"name":"isAlternativeRecordOrdering","parameterTypes":[] }, 
+    {"name":"isAsyncAfterSynchronization","parameterTypes":[] }, 
+    {"name":"isAsyncBeforeSynchronization","parameterTypes":[] }, 
+    {"name":"isAsyncCommit","parameterTypes":[] }, 
+    {"name":"isAsyncPrepare","parameterTypes":[] }, 
+    {"name":"isAsyncRollback","parameterTypes":[] }, 
+    {"name":"isBeforeCompletionWhenRollbackOnly","parameterTypes":[] }, 
+    {"name":"isClassicPrepare","parameterTypes":[] }, 
+    {"name":"isCommitOnePhase","parameterTypes":[] }, 
+    {"name":"isEnableStatistics","parameterTypes":[] }, 
+    {"name":"isFinalizeBasicActions","parameterTypes":[] }, 
+    {"name":"isMaintainHeuristics","parameterTypes":[] }, 
+    {"name":"isReadonlyOptimisation","parameterTypes":[] }, 
+    {"name":"isSharedTransactionLog","parameterTypes":[] }, 
+    {"name":"isStartDisabled","parameterTypes":[] }, 
+    {"name":"isTransactionStatusManagerEnable","parameterTypes":[] }, 
+    {"name":"isWriteOptimisation","parameterTypes":[] }, 
+    {"name":"setAllowCheckedActionFactoryOverride","parameterTypes":["boolean"] }, 
+    {"name":"setAlternativeRecordOrdering","parameterTypes":["boolean"] }, 
+    {"name":"setAsyncAfterSynchronization","parameterTypes":["boolean"] }, 
+    {"name":"setAsyncBeforeSynchronization","parameterTypes":["boolean"] }, 
+    {"name":"setAsyncCommit","parameterTypes":["boolean"] }, 
+    {"name":"setAsyncPrepare","parameterTypes":["boolean"] }, 
+    {"name":"setAsyncRollback","parameterTypes":["boolean"] }, 
+    {"name":"setBeforeCompletionWhenRollbackOnly","parameterTypes":["boolean"] }, 
+    {"name":"setCheckedActionFactory","parameterTypes":["com.arjuna.ats.arjuna.coordinator.CheckedActionFactory"] }, 
+    {"name":"setCheckedActionFactoryClassName","parameterTypes":["java.lang.String"] }, 
+    {"name":"setClassicPrepare","parameterTypes":["boolean"] }, 
+    {"name":"setCommitOnePhase","parameterTypes":["boolean"] }, 
+    {"name":"setCommunicationStore","parameterTypes":["java.lang.String"] }, 
+    {"name":"setDefaultTimeout","parameterTypes":["int"] }, 
+    {"name":"setDynamic1PC","parameterTypes":["boolean"] }, 
+    {"name":"setEnableStatistics","parameterTypes":["boolean"] }, 
+    {"name":"setFinalizeBasicActions","parameterTypes":["boolean"] }, 
+    {"name":"setMaintainHeuristics","parameterTypes":["boolean"] }, 
+    {"name":"setMaxTwoPhaseCommitThreads","parameterTypes":["int"] }, 
+    {"name":"setReadonlyOptimisation","parameterTypes":["boolean"] }, 
+    {"name":"setSharedTransactionLog","parameterTypes":["boolean"] }, 
+    {"name":"setStartDisabled","parameterTypes":["boolean"] }, 
+    {"name":"setTransactionStatusManagerEnable","parameterTypes":["boolean"] }, 
+    {"name":"setTxReaperCancelFailWaitPeriod","parameterTypes":["long"] }, 
+    {"name":"setTxReaperCancelWaitPeriod","parameterTypes":["long"] }, 
+    {"name":"setTxReaperMode","parameterTypes":["java.lang.String"] }, 
+    {"name":"setTxReaperTimeout","parameterTypes":["long"] }, 
+    {"name":"setTxReaperZombieMax","parameterTypes":["int"] }, 
+    {"name":"setWriteOptimisation","parameterTypes":["boolean"] }
+  ]
+},
+{
+  "name":"com.arjuna.ats.arjuna.common.CoreEnvironmentBean",
+  "allDeclaredFields":true,
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getNodeIdentifier","parameterTypes":[] }, 
+    {"name":"getPid","parameterTypes":[] }, 
+    {"name":"getProcessImplementation","parameterTypes":[] }, 
+    {"name":"getProcessImplementationClassName","parameterTypes":[] }, 
+    {"name":"getSocketProcessIdMaxPorts","parameterTypes":[] }, 
+    {"name":"getSocketProcessIdPort","parameterTypes":[] }, 
+    {"name":"getTimeoutFactor","parameterTypes":[] }, 
+    {"name":"getVarDir","parameterTypes":[] }, 
+    {"name":"isAllowMultipleLastResources","parameterTypes":[] }, 
+    {"name":"isDisableMultipleLastResourcesWarning","parameterTypes":[] }, 
+    {"name":"setAllowMultipleLastResources","parameterTypes":["boolean"] }, 
+    {"name":"setDisableMultipleLastResourcesWarning","parameterTypes":["boolean"] }, 
+    {"name":"setNodeIdentifier","parameterTypes":["java.lang.String"] }, 
+    {"name":"setPid","parameterTypes":["int"] }, 
+    {"name":"setProcessImplementation","parameterTypes":["com.arjuna.ats.arjuna.utils.Process"] }, 
+    {"name":"setProcessImplementationClassName","parameterTypes":["java.lang.String"] }, 
+    {"name":"setSocketProcessIdMaxPorts","parameterTypes":["int"] }, 
+    {"name":"setSocketProcessIdPort","parameterTypes":["int"] }, 
+    {"name":"setTimeoutFactor","parameterTypes":["int"] }, 
+    {"name":"setVarDir","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"com.arjuna.ats.arjuna.logging.arjunaI18NLogger_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"com.arjuna.ats.internal.arjuna.coordinator.CheckedActionFactoryImple",
+  "allPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.arjuna.ats.jta.TransactionManager",
+  "methods":[{"name":"transactionManager","parameterTypes":[] }]
+},
+{
+  "name":"com.arjuna.ats.jta.UserTransaction",
+  "methods":[{"name":"userTransaction","parameterTypes":[] }]
+},
+{
+  "name":"com.arjuna.ats.jta.resources.LastResourceCommitOptimisation"
+},
+{
+  "name":"com.arjuna.common.util.propertyservice.PropertiesFactory",
+  "fields":[{"name":"delegatePropertiesFactory"}]
+},
+{
+  "name":"com.fasterxml.jackson.databind.ext.Java7HandlersImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BLCHeader$DrainStatusRef",
+  "fields":[{"name":"drainStatus", "allowUnsafeAccess":true}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BaseMpscLinkedArrayQueueColdProducerFields",
+  "fields":[{"name":"producerLimit", "allowUnsafeAccess":true}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BaseMpscLinkedArrayQueueConsumerFields",
+  "fields":[{"name":"consumerIndex", "allowUnsafeAccess":true}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.BaseMpscLinkedArrayQueueProducerFields",
+  "fields":[{"name":"producerIndex", "allowUnsafeAccess":true}]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.PS",
+  "fields":[
+    {"name":"key", "allowUnsafeAccess":true}, 
+    {"name":"value", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.PSMS",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.SSLMS",
+  "methods":[{"name":"<init>","parameterTypes":["com.github.benmanes.caffeine.cache.Caffeine","com.github.benmanes.caffeine.cache.CacheLoader","boolean"] }]
+},
+{
+  "name":"com.github.benmanes.caffeine.cache.StripedBuffer",
+  "fields":[{"name":"tableBusy", "allowUnsafeAccess":true}]
+},
+{
+  "name":"com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.xml.internal.stream.XMLInputFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"io.agroal.pool.ConnectionHandler[]"
+},
+{
+  "name":"io.netty.bootstrap.ServerBootstrap$ServerBootstrapAcceptor",
+  "methods":[
+    {"name":"channelRead","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, 
+    {"name":"exceptionCaught","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }
+  ]
+},
+{
+  "name":"io.netty.buffer.AbstractByteBufAllocator",
+  "allDeclaredMethods":true
+},
+{
+  "name":"io.netty.channel.ChannelInboundHandlerAdapter",
+  "methods":[
+    {"name":"channelActive","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelInactive","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelRead","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, 
+    {"name":"channelReadComplete","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelRegistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelUnregistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelWritabilityChanged","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"userEventTriggered","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }
+  ]
+},
+{
+  "name":"io.netty.channel.ChannelInitializer",
+  "methods":[
+    {"name":"channelRegistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"exceptionCaught","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }
+  ]
+},
+{
+  "name":"io.netty.channel.DefaultChannelPipeline$HeadContext",
+  "methods":[
+    {"name":"bind","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","io.netty.channel.ChannelPromise"] }, 
+    {"name":"channelActive","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelInactive","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelRead","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, 
+    {"name":"channelReadComplete","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelRegistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelUnregistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelWritabilityChanged","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"close","parameterTypes":["io.netty.channel.ChannelHandlerContext","io.netty.channel.ChannelPromise"] }, 
+    {"name":"connect","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.net.SocketAddress","java.net.SocketAddress","io.netty.channel.ChannelPromise"] }, 
+    {"name":"deregister","parameterTypes":["io.netty.channel.ChannelHandlerContext","io.netty.channel.ChannelPromise"] }, 
+    {"name":"disconnect","parameterTypes":["io.netty.channel.ChannelHandlerContext","io.netty.channel.ChannelPromise"] }, 
+    {"name":"exceptionCaught","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }, 
+    {"name":"flush","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"read","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"userEventTriggered","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, 
+    {"name":"write","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object","io.netty.channel.ChannelPromise"] }
+  ]
+},
+{
+  "name":"io.netty.channel.DefaultChannelPipeline$TailContext",
+  "methods":[
+    {"name":"channelActive","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelInactive","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelRead","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }, 
+    {"name":"channelReadComplete","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelRegistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelUnregistered","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"channelWritabilityChanged","parameterTypes":["io.netty.channel.ChannelHandlerContext"] }, 
+    {"name":"exceptionCaught","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Throwable"] }, 
+    {"name":"userEventTriggered","parameterTypes":["io.netty.channel.ChannelHandlerContext","java.lang.Object"] }
+  ]
+},
+{
+  "name":"io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields",
+  "fields":[{"name":"producerLimit", "allowUnsafeAccess":true}]
+},
+{
+  "name":"io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields",
+  "fields":[{"name":"consumerIndex", "allowUnsafeAccess":true}]
+},
+{
+  "name":"io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields",
+  "fields":[{"name":"producerIndex", "allowUnsafeAccess":true}]
+},
+{
+  "name":"io.quarkus.agroal.runtime.JdbcDriver",
+  "allDeclaredMethods":true
+},
+{
+  "name":"io.quarkus.hibernate.orm.runtime.customized.QuarkusConnectionProvider",
+  "allPublicMethods":true
+},
+{
+  "name":"io.quarkus.hibernate.orm.runtime.customized.QuarkusJtaPlatform",
+  "allPublicMethods":true
+},
+{
+  "name":"io.quarkus.hibernate.orm.runtime.customized.QuarkusRuntimeProxyFactoryFactory",
+  "allPublicMethods":true
+},
+{
+  "name":"io.quarkus.hibernate.orm.runtime.service.CfgXmlAccessServiceInitiatorQuarkus$1",
+  "allPublicMethods":true
+},
+{
+  "name":"io.quarkus.runner.ApplicationImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"io.quarkus.runner.GeneratedMain",
+  "methods":[{"name":"main","parameterTypes":["java.lang.String[]"] }]
+},
+{
+  "name":"io.smallrye.config.ConfigMessages_$bundle",
+  "fields":[{"name":"INSTANCE"}]
+},
+{
+  "name":"io.smallrye.context.api.ManagedExecutorConfig",
+  "allDeclaredMethods":true
+},
+{
+  "name":"java.beans.PropertyVetoException"
+},
+{
+  "name":"java.lang.Object",
+  "allPublicMethods":true
+},
+{
+  "name":"java.lang.String[]"
+},
+{
+  "name":"java.lang.Thread",
+  "fields":[
+    {"name":"contextClassLoader", "allowUnsafeAccess":true}, 
+    {"name":"inheritableThreadLocals", "allowUnsafeAccess":true}, 
+    {"name":"threadLocalRandomProbe", "allowUnsafeAccess":true}, 
+    {"name":"threadLocals", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"java.lang.management.ManagementFactory",
+  "methods":[{"name":"getRuntimeMXBean","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.management.RuntimeMXBean",
+  "methods":[
+    {"name":"getInputArguments","parameterTypes":[] }, 
+    {"name":"getName","parameterTypes":[] }
+  ]
+},
+{
+  "name":"java.lang.reflect.AccessibleObject",
+  "fields":[{"name":"override"}]
+},
+{
+  "name":"java.nio.Bits",
+  "fields":[{"name":"UNALIGNED"}]
+},
+{
+  "name":"java.nio.Buffer",
+  "fields":[{"name":"address", "allowUnsafeAccess":true}]
+},
+{
+  "name":"java.nio.DirectByteBuffer",
+  "methods":[{"name":"<init>","parameterTypes":["long","int"] }]
+},
+{
+  "name":"java.security.SecureRandomParameters"
+},
+{
+  "name":"java.util.ArrayList",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"java.util.Arrays$ArrayList"
+},
+{
+  "name":"java.util.Collections$EmptyList"
+},
+{
+  "name":"java.util.Collections$EmptyMap"
+},
+{
+  "name":"java.util.Collections$EmptySet"
+},
+{
+  "name":"java.util.Collections$SingletonList"
+},
+{
+  "name":"java.util.Collections$SingletonMap"
+},
+{
+  "name":"java.util.Collections$SingletonSet"
+},
+{
+  "name":"java.util.Collections$SynchronizedSet"
+},
+{
+  "name":"java.util.Collections$UnmodifiableRandomAccessList"
+},
+{
+  "name":"java.util.Collections$UnmodifiableSet"
+},
+{
+  "name":"java.util.DoubleSummaryStatistics",
+  "methods":[{"name":"<init>","parameterTypes":["long","double","double","double"] }]
+},
+{
+  "name":"java.util.IntSummaryStatistics",
+  "methods":[{"name":"<init>","parameterTypes":["long","int","int","long"] }]
+},
+{
+  "name":"java.util.JumboEnumSet"
+},
+{
+  "name":"java.util.LongSummaryStatistics",
+  "methods":[{"name":"<init>","parameterTypes":["long","long","long","long"] }]
+},
+{
+  "name":"java.util.RegularEnumSet"
+},
+{
+  "name":"javax.enterprise.context.BeforeDestroyed",
+  "allDeclaredMethods":true
+},
+{
+  "name":"javax.enterprise.context.Destroyed",
+  "allDeclaredMethods":true
+},
+{
+  "name":"javax.enterprise.inject.Default",
+  "allDeclaredMethods":true
+},
+{
+  "name":"javax.enterprise.inject.spi.BeanManager"
+},
+{
+  "name":"javax.net.ssl.SSLEngine",
+  "methods":[{"name":"getApplicationProtocol","parameterTypes":[] }]
+},
+{
+  "name":"javax.validation.Validation"
+},
+{
+  "name":"jdk.internal.misc.Unsafe",
+  "methods":[{"name":"getUnsafe","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.Liquibase",
+  "methods":[
+    {"name":"listUnrunChangeSets","parameterTypes":["liquibase.Contexts","liquibase.LabelExpression","boolean"] }, 
+    {"name":"resetServices","parameterTypes":[] }
+  ]
+},
+{
+  "name":"liquibase.change.AbstractChange",
+  "allPublicMethods":true
+},
+{
+  "name":"liquibase.change.AbstractSQLChange",
+  "allPublicMethods":true
+},
+{
+  "name":"liquibase.change.AddColumnConfig",
+  "allDeclaredFields":true,
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.ColumnConfig",
+  "allDeclaredFields":true,
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.ConstraintsConfig",
+  "allDeclaredFields":true
+},
+{
+  "name":"liquibase.change.core.AbstractModifyDataChange",
+  "allPublicMethods":true
+},
+{
+  "name":"liquibase.change.core.AddAutoIncrementChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddColumnChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddDefaultValueChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddForeignKeyConstraintChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddLookupTableChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddNotNullConstraintChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddPrimaryKeyChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AddUniqueConstraintChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.AlterSequenceChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.CreateIndexChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.CreateProcedureChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.CreateSequenceChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.CreateTableChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.CreateViewChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DeleteDataChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropAllForeignKeyConstraintsChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropColumnChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropDefaultValueChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropForeignKeyConstraintChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropIndexChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropNotNullConstraintChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropPrimaryKeyChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropProcedureChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropSequenceChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropTableChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropUniqueConstraintChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.DropViewChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.EmptyChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.ExecuteShellCommandChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.InsertDataChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.LoadDataChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.LoadUpdateDataChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.MergeColumnChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.ModifyDataTypeChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.OutputChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.RawSQLChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.RenameColumnChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.RenameSequenceChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.RenameTableChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.RenameViewChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.SQLFileChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.SetColumnRemarksChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.SetTableRemarksChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.StopChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.TagDatabaseChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.core.UpdateDataChange",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.change.custom.CustomChangeWrapper",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.changelog.StandardChangeLogHistoryService",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.configuration.GlobalConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.DB2Database",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.DerbyDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.FirebirdDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.H2Database",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.HsqlDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.InformixDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.MSSQLDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.MariaDBDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.MySQLDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.OracleDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.PostgresDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.SQLiteDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.SybaseASADatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.SybaseDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.database.core.UnsupportedDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.BigIntType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.BlobType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.BooleanType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.CharType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.ClobType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.CurrencyType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.DatabaseFunctionType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.DateTimeType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.DateType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.DecimalType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.DoubleType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.FloatType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.IntType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.MediumIntType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.NCharType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.NVarcharType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.NumberType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.SmallIntType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.TimeType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.TimestampType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.TinyIntType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.UUIDType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.UnknownType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.VarcharType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.datatype.core.XMLType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.CatalogComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.ColumnComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.DefaultDatabaseObjectComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.ForeignKeyComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.IndexComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.PrimaryKeyComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.SchemaComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.TableComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.diff.compare.core.UniqueConstraintComparator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.executor.jvm.JdbcExecutor",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.lockservice.StandardLockService",
+  "fields":[{"name":"hasDatabaseChangeLogLockTable"}]
+},
+{
+  "name":"liquibase.parser.ChangeLogParserCofiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.parser.core.xml.XMLChangeLogSAXParser",
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getSaxParserFactory","parameterTypes":[] }
+  ]
+},
+{
+  "name":"liquibase.precondition.AbstractPrecondition",
+  "allDeclaredFields":true
+},
+{
+  "name":"liquibase.precondition.CustomPreconditionWrapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.PreconditionLogic",
+  "allDeclaredFields":true
+},
+{
+  "name":"liquibase.precondition.core.AndPrecondition",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.ChangeLogPropertyDefinedPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.ChangeSetExecutedPrecondition",
+  "allDeclaredFields":true,
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.ColumnExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.DBMSPrecondition",
+  "allDeclaredFields":true,
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.ForeignKeyExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.IndexExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.NotPrecondition",
+  "allDeclaredFields":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.ObjectQuotingStrategyPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.OrPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.PreconditionContainer",
+  "allDeclaredFields":true,
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.PrimaryKeyExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.RowCountPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.RunningAsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.SequenceExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.SqlPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.TableExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.TableIsEmptyPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.precondition.core.ViewExistsPrecondition",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sdk.database.MockDatabase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.serializer.AbstractLiquibaseSerializable",
+  "allDeclaredFields":true
+},
+{
+  "name":"liquibase.snapshot.jvm.CatalogSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.ColumnSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.DataSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.ForeignKeySnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.H2ColumnSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.IndexSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.PrimaryKeySnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.SchemaSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.SequenceSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.TableSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.UniqueConstraintSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.snapshot.jvm.ViewSnapshotGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sql.visitor.AppendSqlVisitor",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sql.visitor.PrependSqlVisitor",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sql.visitor.RegExpReplaceSqlVisitor",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sql.visitor.ReplaceSqlVisitor",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddAutoIncrementGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddAutoIncrementGeneratorDB2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddAutoIncrementGeneratorHsqlH2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddAutoIncrementGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddAutoIncrementGeneratorMySQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddAutoIncrementGeneratorSQLite",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddColumnGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddColumnGeneratorDefaultClauseBeforeNotNull",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddColumnGeneratorSQLite",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorDerby",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorMSSQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorMySQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorOracle",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorPostgres",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybaseASA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddDefaultValueSQLite",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddForeignKeyConstraintGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddPrimaryKeyGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddPrimaryKeyGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddUniqueConstraintGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorTDS",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.AlterSequenceGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.ClearDatabaseChangeLogTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CommentGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CopyRowsGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateDatabaseChangeLogLockTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGeneratorSybase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateIndexGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateIndexGeneratorPostgres",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateProcedureGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateSequenceGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateTableGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateViewGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.CreateViewGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DeleteGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropColumnGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropDefaultValueGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropForeignKeyConstraintGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropIndexGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropPrimaryKeyGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropProcedureGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropSequenceGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropUniqueConstraintGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.DropViewGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorDB2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorDerby",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorFirebird",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorHsql",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorMSSQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorMySQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorOracle",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.FindForeignKeyConstraintsGeneratorPostgres",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetNextChangeSetSequenceValueGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDB2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDerby",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorFirebird",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorHsql",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorInformix",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorMSSQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorOracle",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorPostgres",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybase",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybaseASA",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InitializeDatabaseChangeLogLockTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertDataChangeGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorDB2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorH2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorHsql",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMSSQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMySQL",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorOracle",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertOrUpdateGeneratorPostgres",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.InsertSetGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.LockDatabaseChangeLogGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.MarkChangeSetRanGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.ModifyDataTypeGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RawSqlGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.ReindexGeneratorSQLite",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RemoveChangeSetRanStatusGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RenameColumnGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RenameSequenceGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RenameTableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RenameViewGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.ReorganizeTableGeneratorDB2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.RuntimeGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogLockGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.SetColumnRemarksGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.SetNullableGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.SetTableRemarksGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.StoredProcedureGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.TableRowCountGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.TagDatabaseGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.UnlockDatabaseChangeLogGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.UpdateChangeSetChecksumGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.UpdateDataChangeGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"liquibase.sqlgenerator.core.UpdateGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.h2.Driver"
+},
+{
+  "name":"org.hibernate.bytecode.internal.none.BytecodeProviderImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.cache.internal.EnabledCaching",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.cfg.beanvalidation.TypeSafeActivator",
+  "methods":[{"name":"activate","parameterTypes":["org.hibernate.cfg.beanvalidation.ActivationContext"] }]
+},
+{
+  "name":"org.hibernate.engine.config.internal.ConfigurationServiceImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.batch.internal.BatchBuilderImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jdbc.internal.JdbcServicesImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.jndi.internal.JndiServiceImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.query.internal.NativeQueryInterpreterStandardImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.engine.spi.Managed",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.hibernate.engine.spi.ManagedEntity",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.hibernate.engine.spi.PersistentAttributeInterceptable",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.hibernate.engine.spi.SelfDirtinessTracker",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.hibernate.event.service.internal.EventListenerRegistryImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.event.spi.AutoFlushEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.DeleteEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.DirtyCheckEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.EventType",
+  "allDeclaredFields":true
+},
+{
+  "name":"org.hibernate.event.spi.EvictEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.FlushEntityEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.FlushEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.InitializeCollectionEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.LoadEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.LockEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.MergeEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.PersistEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.PostDeleteEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.PostInsertEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.PostLoadEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.PostUpdateEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.PreLoadEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.RefreshEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.ReplicateEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.ResolveNaturalIdEventListener[]"
+},
+{
+  "name":"org.hibernate.event.spi.SaveOrUpdateEventListener[]"
+},
+{
+  "name":"org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.hql.internal.ast.HqlToken",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.BooleanLiteralNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.CountNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.DotNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.FromClause",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.FromElement",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.IdentNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.Node",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.OrderByClause",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.ParameterNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.QueryNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.SelectClause",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.SqlFragment",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.hql.internal.ast.tree.SqlNode",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.internal.CoreMessageLogger_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.hibernate.internal.EntityManagerMessageLogger_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.hibernate.jmx.internal.DisabledJmxServiceImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.persister.collection.BasicCollectionPersister",
+  "methods":[{"name":"<init>","parameterTypes":["org.hibernate.mapping.Collection","org.hibernate.cache.spi.access.CollectionDataAccess","org.hibernate.persister.spi.PersisterCreationContext"] }]
+},
+{
+  "name":"org.hibernate.persister.collection.OneToManyPersister",
+  "methods":[{"name":"<init>","parameterTypes":["org.hibernate.mapping.Collection","org.hibernate.cache.spi.access.CollectionDataAccess","org.hibernate.persister.spi.PersisterCreationContext"] }]
+},
+{
+  "name":"org.hibernate.persister.entity.SingleTableEntityPersister",
+  "methods":[{"name":"<init>","parameterTypes":["org.hibernate.mapping.PersistentClass","org.hibernate.cache.spi.access.EntityDataAccess","org.hibernate.cache.spi.access.NaturalIdDataAccess","org.hibernate.persister.spi.PersisterCreationContext"] }]
+},
+{
+  "name":"org.hibernate.persister.internal.PersisterFactoryImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.persister.internal.StandardPersisterClassResolver",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.property.access.internal.PropertyAccessStrategyResolverStandardImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.resource.beans.internal.BeansMessageLogger_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.hibernate.resource.beans.internal.ManagedBeanRegistryImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.hibernate.service.internal.SessionFactoryServiceRegistryFactoryImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.stat.internal.StatisticsImpl",
+  "allPublicMethods":true
+},
+{
+  "name":"org.hibernate.tuple.entity.PojoEntityTuplizer",
+  "methods":[{"name":"<init>","parameterTypes":["org.hibernate.tuple.entity.EntityMetamodel","org.hibernate.mapping.PersistentClass"] }]
+},
+{
+  "name":"org.hibernate.type.EnumType",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.infinispan.commons.logging.Log_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.infinispan.container.versioning.NumericVersionGenerator$RankCalculator",
+  "allPublicMethods":true
+},
+{
+  "name":"org.infinispan.distribution.ch.impl.HashFunctionPartitioner",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.infinispan.globalstate.impl.GlobalConfigurationStateListener",
+  "allPublicMethods":true
+},
+{
+  "name":"org.infinispan.persistence.remote.logging.Log_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.infinispan.protostream.impl.Log_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.infinispan.quarkus.hibernate.cache.QuarkusInfinispanRegionFactory",
+  "allPublicMethods":true
+},
+{
+  "name":"org.infinispan.reactive.publisher.impl.PublisherHandler",
+  "allPublicMethods":true
+},
+{
+  "name":"org.infinispan.transaction.lookup.JBossStandaloneJTAManagerLookup",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.infinispan.util.logging.Log_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.jboss.threads.EnhancedQueueExecutor",
+  "fields":[
+    {"name":"activeCount", "allowUnsafeAccess":true}, 
+    {"name":"peakQueueSize", "allowUnsafeAccess":true}, 
+    {"name":"peakThreadCount", "allowUnsafeAccess":true}, 
+    {"name":"queueSize", "allowUnsafeAccess":true}, 
+    {"name":"sequence"}, 
+    {"name":"terminationWaiters", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"org.jboss.threads.EnhancedQueueExecutor$PoolThreadNode",
+  "fields":[
+    {"name":"parked", "allowUnsafeAccess":true}, 
+    {"name":"task", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"org.jboss.threads.EnhancedQueueExecutor$QNode",
+  "fields":[{"name":"next", "allowUnsafeAccess":true}]
+},
+{
+  "name":"org.jboss.threads.EnhancedQueueExecutorBase1",
+  "fields":[{"name":"tail", "allowUnsafeAccess":true}]
+},
+{
+  "name":"org.jboss.threads.EnhancedQueueExecutorBase3",
+  "fields":[{"name":"head", "allowUnsafeAccess":true}]
+},
+{
+  "name":"org.jboss.threads.EnhancedQueueExecutorBase5",
+  "fields":[{"name":"threadStatus", "allowUnsafeAccess":true}]
+},
+{
+  "name":"org.jboss.threads.Messages_$logger",
+  "methods":[{"name":"<init>","parameterTypes":["org.jboss.logging.Logger"] }]
+},
+{
+  "name":"org.keycloak.authentication.actiontoken.execactions.ExecuteActionsActionTokenHandler",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.actiontoken.idpverifyemail.IdpVerifyAccountLinkActionTokenHandler",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.actiontoken.resetcred.ResetCredentialsActionTokenHandler",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.actiontoken.verifyemail.VerifyEmailActionTokenHandler",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.broker.IdpAutoLinkAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.broker.IdpConfirmLinkAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.broker.IdpCreateUserIfUniqueAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.broker.IdpEmailVerificationAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.broker.IdpReviewProfileAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.broker.IdpUsernamePasswordFormFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.ConditionalOtpFormAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.CookieAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.IdentityProviderAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.OTPFormAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.PasswordFormFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.ScriptBasedAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.SpnegoAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.UsernameFormFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.UsernamePasswordFormFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.WebAuthnAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.browser.WebAuthnPasswordlessAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.challenge.BasicAuthAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.challenge.BasicAuthOTPAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.challenge.NoCookieFlowRedirectAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.client.ClientIdAndSecretAuthenticator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.client.JWTClientAuthenticator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.client.JWTClientSecretAuthenticator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.client.X509ClientAuthenticator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.conditional.ConditionalRoleAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.conditional.ConditionalUserConfiguredAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.console.ConsoleUsernamePasswordAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.directgrant.ValidateOTP",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.directgrant.ValidatePassword",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.directgrant.ValidateUsername",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.resetcred.ResetCredentialChooseUser",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.resetcred.ResetCredentialEmail",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.resetcred.ResetOTP",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.resetcred.ResetPassword",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.x509.ValidateX509CertificateUsernameFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.authenticators.x509.X509ClientCertificateAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.forms.RegistrationPage",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.forms.RegistrationPassword",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.forms.RegistrationProfile",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.forms.RegistrationRecaptcha",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.forms.RegistrationUserCreation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.TermsAndConditions",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.UpdatePassword",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.UpdateProfile",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.UpdateTotp",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.UpdateUserLocaleAction",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.VerifyEmail",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.WebAuthnPasswordlessRegisterFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authentication.requiredactions.WebAuthnRegisterFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.DefaultAuthorizationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.config.UmaWellKnownProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.jpa.entities.PermissionTicketEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"createdTimestamp"}, 
+    {"name":"grantedTimestamp"}, 
+    {"name":"id"}, 
+    {"name":"owner"}, 
+    {"name":"policy"}, 
+    {"name":"requester"}, 
+    {"name":"resource"}, 
+    {"name":"resourceServer"}, 
+    {"name":"scope"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.authorization.jpa.entities.PolicyEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"associatedPolicies"}, 
+    {"name":"config"}, 
+    {"name":"decisionStrategy"}, 
+    {"name":"description"}, 
+    {"name":"id"}, 
+    {"name":"logic"}, 
+    {"name":"name"}, 
+    {"name":"owner"}, 
+    {"name":"resourceServer"}, 
+    {"name":"resources"}, 
+    {"name":"scopes"}, 
+    {"name":"type"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.authorization.jpa.entities.ResourceAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"resource"}, 
+    {"name":"value"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.authorization.jpa.entities.ResourceEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"attributes"}, 
+    {"name":"displayName"}, 
+    {"name":"iconUri"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"owner"}, 
+    {"name":"ownerManagedAccess"}, 
+    {"name":"policies"}, 
+    {"name":"resourceServer"}, 
+    {"name":"scopes"}, 
+    {"name":"type"}, 
+    {"name":"uris"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.authorization.jpa.entities.ResourceServerEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"allowRemoteResourceManagement"}, 
+    {"name":"decisionStrategy"}, 
+    {"name":"id"}, 
+    {"name":"policyEnforcementMode"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.authorization.jpa.entities.ScopeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"displayName"}, 
+    {"name":"iconUri"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"policies"}, 
+    {"name":"resourceServer"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.authorization.jpa.store.JPAAuthorizationStoreFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.aggregated.AggregatePolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.client.ClientPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.group.GroupPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.js.JSPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.permission.ResourcePolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.permission.ScopePolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.permission.UMAPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.role.RolePolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.time.TimePolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.policy.provider.user.UserPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.authorization.protection.introspect.RPTIntrospectionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.KeycloakOIDCIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.OIDCIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.mappers.AdvancedClaimToRoleMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.mappers.ClaimToRoleMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.mappers.ExternalKeycloakRoleToRoleMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.mappers.UserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.oidc.mappers.UsernameTemplateMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.provider.HardcodedAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.provider.HardcodedRoleMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.provider.HardcodedUserSessionAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.saml.SAMLIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.saml.mappers.AdvancedAttributeToRoleMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.saml.mappers.AttributeToRoleMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.saml.mappers.UserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.broker.saml.mappers.UsernameTemplateMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.cluster.infinispan.InfinispanClusterProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.cluster.infinispan.InfinispanClusterProviderFactory$ViewChangeListener",
+  "allPublicMethods":true
+},
+{
+  "name":"org.keycloak.cluster.infinispan.InfinispanNotificationsManager$CacheEntryListener",
+  "allPublicMethods":true
+},
+{
+  "name":"org.keycloak.connections.httpclient.DefaultHttpClientFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.JpaExceptionConverter",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.QuarkusJpaConnectionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.AddRealmCodeSecret",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.AuthzResourceUseMoreURIs",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.ExtractRealmKeysFromRealmTable",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdate1_2_0_Beta1",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdate1_2_0_CR1",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdate1_4_0_Final",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdate1_9_0_Final",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdate4_0_0_DefaultClientScopes",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdate4_7_0_OfflineSessionsTimestamps",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.JpaUpdateAuthz_3_4_0_CR1",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.MigrateUserFedToComponent",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.PortLdapUserFedToComponentModel",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.custom.RemoveDuplicateOfflineSessions",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.lock.CustomInsertLockRecordGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.lock.CustomLockDatabaseChangeLogGenerator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.lock.DummyLockService",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.jpa.updater.liquibase.lock.LiquibaseDBLockProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.liquibase.QuarkusJpaUpdaterProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.connections.liquibase.QuarkusLiquibaseConnectionProvider",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.OTPCredentialProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.PasswordCredentialProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.WebAuthnCredentialProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.WebAuthnPasswordlessCredentialProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.hash.Pbkdf2PasswordHashProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.hash.Pbkdf2Sha256PasswordHashProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.credential.hash.Pbkdf2Sha512PasswordHashProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.Aes128CbcHmacSha256ContentEncryptionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.Aes128GcmContentEncryptionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.Aes192CbcHmacSha384ContentEncryptionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.Aes192GcmContentEncryptionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.Aes256CbcHmacSha512ContentEncryptionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.Aes256GcmContentEncryptionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.ES256ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.ES256SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.ES384ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.ES384SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.ES512ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.ES512SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.HS256ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.HS256SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.HS384ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.HS384SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.HS512ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.HS512SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.PS256ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.PS256SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.PS384ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.PS384SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.PS512ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.PS512SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RS256ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RS256SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RS384ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RS384SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RS512ClientSignatureVerifierProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RS512SignatureProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RsaesOaep256CekManagementProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RsaesOaepCekManagementProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.RsaesPkcs1CekManagementProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.SHA256HashProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.SHA384HashProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.crypto.SHA512HashProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.email.DefaultEmailSenderProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.email.freemarker.FreeMarkerEmailTemplateProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.encoding.GzipResourceEncodingProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.events.email.EmailEventListenerProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.events.jpa.AdminEventEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"authClientId"}, 
+    {"name":"authIpAddress"}, 
+    {"name":"authRealmId"}, 
+    {"name":"authUserId"}, 
+    {"name":"error"}, 
+    {"name":"id"}, 
+    {"name":"operationType"}, 
+    {"name":"realmId"}, 
+    {"name":"representation"}, 
+    {"name":"resourcePath"}, 
+    {"name":"resourceType"}, 
+    {"name":"time"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.events.jpa.EventEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"clientId"}, 
+    {"name":"detailsJson"}, 
+    {"name":"error"}, 
+    {"name":"id"}, 
+    {"name":"ipAddress"}, 
+    {"name":"realmId"}, 
+    {"name":"sessionId"}, 
+    {"name":"time"}, 
+    {"name":"type"}, 
+    {"name":"userId"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.events.jpa.JpaEventStoreProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.events.log.JBossLoggingEventListenerProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.executors.DefaultExecutorsProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.exportimport.KeycloakClientDescriptionConverter",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.exportimport.dir.DirExportProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.exportimport.dir.DirImportProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.exportimport.singlefile.SingleFileExportProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.exportimport.singlefile.SingleFileImportProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.federation.kerberos.KerberosFederationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.federation.sssd.SSSDFederationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.forms.account.freemarker.FreeMarkerAccountProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.forms.login.freemarker.FreeMarkerLoginFormsProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.headers.DefaultSecurityHeadersProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.GeneratedAesKeyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.GeneratedEcdsaKeyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.GeneratedHmacKeyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.GeneratedRsaKeyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.ImportedRsaKeyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.JavaKeystoreKeyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.keys.infinispan.InfinispanPublicKeyStorageProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.locale.DefaultLocaleSelectorProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.locale.DefaultLocaleUpdaterProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.cache.infinispan.InfinispanCacheRealmProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.cache.infinispan.InfinispanUserCacheProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.cache.infinispan.authorization.InfinispanCacheStoreFactoryProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.JpaClientProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.JpaGroupProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.JpaRealmProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.JpaRoleProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.JpaUserProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.AuthenticationExecutionEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"authenticator"}, 
+    {"name":"authenticatorConfig"}, 
+    {"name":"autheticatorFlow"}, 
+    {"name":"flowId"}, 
+    {"name":"id"}, 
+    {"name":"parentFlow"}, 
+    {"name":"priority"}, 
+    {"name":"realm"}, 
+    {"name":"requirement"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.AuthenticationFlowEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"alias"}, 
+    {"name":"builtIn"}, 
+    {"name":"description"}, 
+    {"name":"executions"}, 
+    {"name":"id"}, 
+    {"name":"providerId"}, 
+    {"name":"realm"}, 
+    {"name":"topLevel"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.AuthenticatorConfigEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"alias"}, 
+    {"name":"config"}, 
+    {"name":"id"}, 
+    {"name":"realm"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[{"name":"value"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"alwaysDisplayInConsole"}, 
+    {"name":"attributes"}, 
+    {"name":"authFlowBindings"}, 
+    {"name":"baseUrl"}, 
+    {"name":"bearerOnly"}, 
+    {"name":"clientAuthenticatorType"}, 
+    {"name":"clientId"}, 
+    {"name":"consentRequired"}, 
+    {"name":"defaultRoles"}, 
+    {"name":"description"}, 
+    {"name":"directAccessGrantsEnabled"}, 
+    {"name":"enabled"}, 
+    {"name":"frontchannelLogout"}, 
+    {"name":"fullScopeAllowed"}, 
+    {"name":"id"}, 
+    {"name":"implicitFlowEnabled"}, 
+    {"name":"managementUrl"}, 
+    {"name":"name"}, 
+    {"name":"nodeReRegistrationTimeout"}, 
+    {"name":"notBefore"}, 
+    {"name":"protocol"}, 
+    {"name":"protocolMappers"}, 
+    {"name":"publicClient"}, 
+    {"name":"realm"}, 
+    {"name":"redirectUris"}, 
+    {"name":"registeredNodes"}, 
+    {"name":"registrationToken"}, 
+    {"name":"rootUrl"}, 
+    {"name":"scopeMapping"}, 
+    {"name":"secret"}, 
+    {"name":"serviceAccountsEnabled"}, 
+    {"name":"standardFlowEnabled"}, 
+    {"name":"surrogateAuthRequired"}, 
+    {"name":"webOrigins"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientInitialAccessEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"count"}, 
+    {"name":"expiration"}, 
+    {"name":"id"}, 
+    {"name":"realm"}, 
+    {"name":"remainingCount"}, 
+    {"name":"timestamp"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientScopeAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[{"name":"value"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientScopeClientMappingEntity",
+  "allDeclaredMethods":true,
+  "fields":[{"name":"defaultScope"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientScopeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"attributes"}, 
+    {"name":"description"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"protocol"}, 
+    {"name":"protocolMappers"}, 
+    {"name":"realm"}, 
+    {"name":"scopeMapping"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ClientScopeRoleMappingEntity",
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ComponentConfigEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"component"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"value"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ComponentEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"componentConfigs"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"parentId"}, 
+    {"name":"providerId"}, 
+    {"name":"providerType"}, 
+    {"name":"realm"}, 
+    {"name":"subType"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.CredentialEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"createdDate"}, 
+    {"name":"credentialData"}, 
+    {"name":"id"}, 
+    {"name":"priority"}, 
+    {"name":"salt"}, 
+    {"name":"secretData"}, 
+    {"name":"type"}, 
+    {"name":"user"}, 
+    {"name":"userLabel"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.DefaultClientScopeRealmMappingEntity",
+  "allDeclaredMethods":true,
+  "fields":[{"name":"defaultScope"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.FederatedIdentityEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"realmId"}, 
+    {"name":"token"}, 
+    {"name":"userId"}, 
+    {"name":"userName"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.GroupAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"group"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"value"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.GroupEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"attributes"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"parentId"}, 
+    {"name":"realm"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.GroupRoleMappingEntity",
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.IdentityProviderEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"addReadTokenRoleOnCreate"}, 
+    {"name":"alias"}, 
+    {"name":"authenticateByDefault"}, 
+    {"name":"config"}, 
+    {"name":"displayName"}, 
+    {"name":"enabled"}, 
+    {"name":"firstBrokerLoginFlowId"}, 
+    {"name":"internalId"}, 
+    {"name":"linkOnly"}, 
+    {"name":"postBrokerLoginFlowId"}, 
+    {"name":"providerId"}, 
+    {"name":"realm"}, 
+    {"name":"storeToken"}, 
+    {"name":"trustEmail"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getInternalId","parameterTypes":[] }, 
+    {"name":"setInternalId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.IdentityProviderMapperEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"config"}, 
+    {"name":"id"}, 
+    {"name":"identityProviderAlias"}, 
+    {"name":"identityProviderMapper"}, 
+    {"name":"name"}, 
+    {"name":"realm"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.MigrationModelEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"id"}, 
+    {"name":"updatedTime"}, 
+    {"name":"version"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.ProtocolMapperEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"client"}, 
+    {"name":"clientScope"}, 
+    {"name":"config"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"protocol"}, 
+    {"name":"protocolMapper"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.RealmAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[{"name":"value"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.RealmEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"accessCodeLifespan"}, 
+    {"name":"accessCodeLifespanLogin"}, 
+    {"name":"accessCodeLifespanUserAction"}, 
+    {"name":"accessTokenLifespan"}, 
+    {"name":"accessTokenLifespanForImplicitFlow"}, 
+    {"name":"accountTheme"}, 
+    {"name":"adminEventsDetailsEnabled"}, 
+    {"name":"adminEventsEnabled"}, 
+    {"name":"adminTheme"}, 
+    {"name":"allowUserManagedAccess"}, 
+    {"name":"attributes"}, 
+    {"name":"authenticationFlows"}, 
+    {"name":"authenticators"}, 
+    {"name":"browserFlow"}, 
+    {"name":"clientAuthenticationFlow"}, 
+    {"name":"clientScopes"}, 
+    {"name":"components"}, 
+    {"name":"defaultGroups"}, 
+    {"name":"defaultLocale"}, 
+    {"name":"defaultRoles"}, 
+    {"name":"directGrantFlow"}, 
+    {"name":"dockerAuthenticationFlow"}, 
+    {"name":"duplicateEmailsAllowed"}, 
+    {"name":"editUsernameAllowed"}, 
+    {"name":"emailTheme"}, 
+    {"name":"enabled"}, 
+    {"name":"enabledEventTypes"}, 
+    {"name":"eventsEnabled"}, 
+    {"name":"eventsExpiration"}, 
+    {"name":"eventsListeners"}, 
+    {"name":"groups"}, 
+    {"name":"id"}, 
+    {"name":"identityProviderMappers"}, 
+    {"name":"identityProviders"}, 
+    {"name":"internationalizationEnabled"}, 
+    {"name":"loginTheme"}, 
+    {"name":"loginWithEmailAllowed"}, 
+    {"name":"masterAdminClient"}, 
+    {"name":"name"}, 
+    {"name":"notBefore"}, 
+    {"name":"offlineSessionIdleTimeout"}, 
+    {"name":"otpPolicyAlgorithm"}, 
+    {"name":"otpPolicyDigits"}, 
+    {"name":"otpPolicyInitialCounter"}, 
+    {"name":"otpPolicyLookAheadWindow"}, 
+    {"name":"otpPolicyPeriod"}, 
+    {"name":"otpPolicyType"}, 
+    {"name":"passwordPolicy"}, 
+    {"name":"refreshTokenMaxReuse"}, 
+    {"name":"registrationAllowed"}, 
+    {"name":"registrationEmailAsUsername"}, 
+    {"name":"registrationFlow"}, 
+    {"name":"rememberMe"}, 
+    {"name":"requiredActionProviders"}, 
+    {"name":"requiredCredentials"}, 
+    {"name":"resetCredentialsFlow"}, 
+    {"name":"resetPasswordAllowed"}, 
+    {"name":"revokeRefreshToken"}, 
+    {"name":"smtpConfig"}, 
+    {"name":"sslRequired"}, 
+    {"name":"ssoSessionIdleTimeout"}, 
+    {"name":"ssoSessionIdleTimeoutRememberMe"}, 
+    {"name":"ssoSessionMaxLifespan"}, 
+    {"name":"ssoSessionMaxLifespanRememberMe"}, 
+    {"name":"supportedLocales"}, 
+    {"name":"userFederationMappers"}, 
+    {"name":"userFederationProviders"}, 
+    {"name":"verifyEmail"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.RequiredActionProviderEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"alias"}, 
+    {"name":"config"}, 
+    {"name":"defaultAction"}, 
+    {"name":"enabled"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"priority"}, 
+    {"name":"providerId"}, 
+    {"name":"realm"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.RequiredCredentialEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"formLabel"}, 
+    {"name":"input"}, 
+    {"name":"secret"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.RoleAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"role"}, 
+    {"name":"value"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.RoleEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"attributes"}, 
+    {"name":"clientId"}, 
+    {"name":"clientRealmConstraint"}, 
+    {"name":"clientRole"}, 
+    {"name":"compositeRoles"}, 
+    {"name":"description"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"realm"}, 
+    {"name":"realmId"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"user"}, 
+    {"name":"value"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserConsentClientScopeEntity",
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserConsentEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"clientId"}, 
+    {"name":"clientStorageProvider"}, 
+    {"name":"createdDate"}, 
+    {"name":"externalClientId"}, 
+    {"name":"grantedClientScopes"}, 
+    {"name":"id"}, 
+    {"name":"lastUpdatedDate"}, 
+    {"name":"user"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"attributes"}, 
+    {"name":"createdTimestamp"}, 
+    {"name":"credentials"}, 
+    {"name":"email"}, 
+    {"name":"emailConstraint"}, 
+    {"name":"emailVerified"}, 
+    {"name":"enabled"}, 
+    {"name":"federationLink"}, 
+    {"name":"firstName"}, 
+    {"name":"id"}, 
+    {"name":"lastName"}, 
+    {"name":"notBefore"}, 
+    {"name":"realmId"}, 
+    {"name":"requiredActions"}, 
+    {"name":"serviceAccountClientLink"}, 
+    {"name":"username"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserFederationMapperEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"config"}, 
+    {"name":"federationMapperType"}, 
+    {"name":"federationProvider"}, 
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"realm"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserFederationProviderEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"changedSyncPeriod"}, 
+    {"name":"config"}, 
+    {"name":"displayName"}, 
+    {"name":"fullSyncPeriod"}, 
+    {"name":"id"}, 
+    {"name":"lastSync"}, 
+    {"name":"priority"}, 
+    {"name":"providerName"}, 
+    {"name":"realm"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserGroupMembershipEntity",
+  "allDeclaredMethods":true,
+  "fields":[{"name":"group"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserRequiredActionEntity",
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.entities.UserRoleMappingEntity",
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.session.JpaUserSessionPersisterProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.session.PersistentClientSessionEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"data"}, 
+    {"name":"timestamp"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.jpa.session.PersistentUserSessionEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"createdOn"}, 
+    {"name":"data"}, 
+    {"name":"lastSessionRefresh"}, 
+    {"name":"realmId"}, 
+    {"name":"userId"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.session.DisabledUserSessionPersisterProvider",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.sessions.infinispan.InfinispanActionTokenStoreProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.sessions.infinispan.InfinispanAuthenticationSessionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.sessions.infinispan.InfinispanCodeToTokenStoreProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.sessions.infinispan.InfinispanSingleUseTokenStoreProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.sessions.infinispan.InfinispanStickySessionEncoderProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.models.sessions.infinispan.InfinispanUserSessionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.BlacklistPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.DefaultPasswordPolicyManagerProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.DigitsPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.ForceExpiredPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.HashAlgorithmPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.HashIterationsPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.HistoryPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.LengthPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.LowerCasePasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.NotEmailPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.NotUsernamePasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.RegexPatternsPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.SpecialCharsPasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.policy.UpperCasePasswordPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.docker.DockerAuthV2ProtocolFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.docker.DockerAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.docker.installation.DockerComposeYamlInstallationProvider",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.docker.installation.DockerRegistryConfigFileInstallationProvider",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.docker.installation.DockerVariableOverrideInstallationProvider",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.docker.mapper.AllowAllDockerProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.AccessTokenIntrospectionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.OIDCClientDescriptionConverterFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.OIDCLoginProtocolFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.OIDCWellKnownProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.RefreshTokenIntrospectionProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.installation.KeycloakOIDCClientInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.installation.KeycloakOIDCJbossSubsystemClientCliInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.installation.KeycloakOIDCJbossSubsystemClientInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.AddressMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.AllowedWebOriginsProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.AudienceProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.AudienceResolveProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.ClaimsParameterTokenMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.FullNameMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.GroupMembershipMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.HardcodedClaim",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.HardcodedRole",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.RoleNameMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.SHA256PairwiseSubMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.ScriptBasedOIDCProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.UserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.UserClientRoleMappingMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.UserPropertyMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.UserRealmRoleMappingMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.oidc.mappers.UserSessionNoteMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.openshift.OpenShiftTokenReviewEndpointFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.EntityDescriptorDescriptionConverter",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.SamlProtocolFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.clientregistration.EntityDescriptorClientRegistrationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.installation.KeycloakSamlClientInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.installation.KeycloakSamlSubsystemCliInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.installation.KeycloakSamlSubsystemInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.installation.ModAuthMellonClientInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.installation.SamlSPDescriptorClientInstallation",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.GroupMembershipMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.HardcodedAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.HardcodedRole",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.RoleListMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.RoleNameMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.SAMLAudienceProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.SAMLAudienceResolveProtocolMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.ScriptBasedMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.UserAttributeStatementMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.UserPropertyAttributeStatementMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.mappers.UserSessionNoteStatementMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.protocol.saml.profile.ecp.authenticator.HttpBasicAuthenticatorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.provider.quarkus.VertxClientCertificateLookupFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.scripting.DefaultScriptingProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientpolicy.DefaultClientPolicyProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientpolicy.condition.ClientRolesConditionFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientpolicy.condition.ClientUpdateContextConditionFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.AdapterInstallationClientRegistrationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.DefaultClientRegistrationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.oidc.OIDCClientRegistrationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.ClientDisabledClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.ClientScopesClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.ConsentRequiredClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.MaxClientsClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.ProtocolMappersClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.ScopeClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.clientregistration.policy.impl.TrustedHostClientRegistrationPolicyFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.managers.DefaultBruteForceProtectorFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.migration.DefaultMigrationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.x509.ApacheProxySslClientCertificateLookupFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.x509.DefaultClientCertificateLookupFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.x509.HaProxySslClientCertificateLookupFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.services.x509.NginxProxySslClientCertificateLookupFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.bitbucket.BitbucketIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.facebook.FacebookIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.facebook.FacebookUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.github.GitHubIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.github.GitHubUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.gitlab.GitLabIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.google.GoogleIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.google.GoogleUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.instagram.InstagramIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.instagram.InstagramUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.linkedin.LinkedInIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.linkedin.LinkedInUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.microsoft.MicrosoftIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.microsoft.MicrosoftUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.openshift.OpenshiftV3IdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.openshift.OpenshiftV4IdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.paypal.PayPalIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.paypal.PayPalUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.stackoverflow.StackoverflowIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.stackoverflow.StackoverflowUserAttributeMapper",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.social.twitter.TwitterIdentityProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.jpa.JpaUserFederatedStorageProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.BrokerLinkEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"brokerUserId"}, 
+    {"name":"brokerUserName"}, 
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}, 
+    {"name":"token"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUser",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"id"}, 
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"id"}, 
+    {"name":"name"}, 
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}, 
+    {"name":"userId"}, 
+    {"name":"value"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserConsentClientScopeEntity",
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserConsentEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"clientId"}, 
+    {"name":"clientStorageProvider"}, 
+    {"name":"createdDate"}, 
+    {"name":"externalClientId"}, 
+    {"name":"grantedClientScopes"}, 
+    {"name":"id"}, 
+    {"name":"lastUpdatedDate"}, 
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}, 
+    {"name":"userId"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserCredentialEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"createdDate"}, 
+    {"name":"credentialData"}, 
+    {"name":"id"}, 
+    {"name":"priority"}, 
+    {"name":"realmId"}, 
+    {"name":"salt"}, 
+    {"name":"secretData"}, 
+    {"name":"storageProviderId"}, 
+    {"name":"type"}, 
+    {"name":"userId"}, 
+    {"name":"userLabel"}
+  ],
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getId","parameterTypes":[] }, 
+    {"name":"setId","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserGroupMembershipEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserRequiredActionEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.jpa.entity.FederatedUserRoleMappingEntity",
+  "allDeclaredMethods":true,
+  "fields":[
+    {"name":"realmId"}, 
+    {"name":"storageProviderId"}
+  ],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.LDAPStorageProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.CertificateLDAPStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.FullNameLDAPStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.HardcodedAttributeMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.HardcodedLDAPAttributeMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.HardcodedLDAPGroupStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.HardcodedLDAPRoleStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.UserAttributeLDAPStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.membership.group.GroupLDAPStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.membership.role.RoleLDAPStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.msad.MSADUserAccountControlStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.ldap.mappers.msadlds.MSADLDSUserAccountControlStorageMapperFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.storage.openshift.OpenshiftClientStorageProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.theme.ClasspathThemeProviderFactory$ThemeRepresentation",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.keycloak.theme.ClasspathThemeProviderFactory$ThemeRepresentation[]"
+},
+{
+  "name":"org.keycloak.theme.ClasspathThemeProviderFactory$ThemesRepresentation",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.keycloak.theme.DefaultThemeSelectorProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.theme.FolderThemeProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.theme.JarThemeProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.timer.basic.BasicTimerProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.transaction.QuarkusJtaTransactionManagerLookup",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.truststore.FileTruststoreProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.url.DefaultHostnameProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.url.FixedHostnameProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.url.RequestHostnameProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.validation.DefaultClientValidationProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.keycloak.vault.FilesPlainTextVaultProviderFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.mariadb.jdbc.Driver"
+},
+{
+  "name":"org.postgresql.Driver",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.postgresql.PGProperty",
+  "fields":[
+    {"name":"ALLOW_ENCODING_CHANGES"}, 
+    {"name":"APPLICATION_NAME"}, 
+    {"name":"ASSUME_MIN_SERVER_VERSION"}, 
+    {"name":"AUTOSAVE"}, 
+    {"name":"BINARY_TRANSFER"}, 
+    {"name":"BINARY_TRANSFER_DISABLE"}, 
+    {"name":"BINARY_TRANSFER_ENABLE"}, 
+    {"name":"CANCEL_SIGNAL_TIMEOUT"}, 
+    {"name":"CLEANUP_SAVEPOINTS"}, 
+    {"name":"CONNECT_TIMEOUT"}, 
+    {"name":"CURRENT_SCHEMA"}, 
+    {"name":"DATABASE_METADATA_CACHE_FIELDS"}, 
+    {"name":"DATABASE_METADATA_CACHE_FIELDS_MIB"}, 
+    {"name":"DEFAULT_ROW_FETCH_SIZE"}, 
+    {"name":"DISABLE_COLUMN_SANITISER"}, 
+    {"name":"ESCAPE_SYNTAX_CALL_MODE"}, 
+    {"name":"GSS_LIB"}, 
+    {"name":"HIDE_UNPRIVILEGED_OBJECTS"}, 
+    {"name":"HOST_RECHECK_SECONDS"}, 
+    {"name":"JAAS_APPLICATION_NAME"}, 
+    {"name":"JAAS_LOGIN"}, 
+    {"name":"KERBEROS_SERVER_NAME"}, 
+    {"name":"LOAD_BALANCE_HOSTS"}, 
+    {"name":"LOGGER_FILE"}, 
+    {"name":"LOGGER_LEVEL"}, 
+    {"name":"LOGIN_TIMEOUT"}, 
+    {"name":"LOG_SERVER_ERROR_DETAIL"}, 
+    {"name":"LOG_UNCLOSED_CONNECTIONS"}, 
+    {"name":"MAX_RESULT_BUFFER"}, 
+    {"name":"OPTIONS"}, 
+    {"name":"PASSWORD"}, 
+    {"name":"PG_DBNAME"}, 
+    {"name":"PG_HOST"}, 
+    {"name":"PG_PORT"}, 
+    {"name":"PREFER_QUERY_MODE"}, 
+    {"name":"PREPARED_STATEMENT_CACHE_QUERIES"}, 
+    {"name":"PREPARED_STATEMENT_CACHE_SIZE_MIB"}, 
+    {"name":"PREPARE_THRESHOLD"}, 
+    {"name":"PROTOCOL_VERSION"}, 
+    {"name":"READ_ONLY"}, 
+    {"name":"READ_ONLY_MODE"}, 
+    {"name":"RECEIVE_BUFFER_SIZE"}, 
+    {"name":"REPLICATION"}, 
+    {"name":"REWRITE_BATCHED_INSERTS"}, 
+    {"name":"SEND_BUFFER_SIZE"}, 
+    {"name":"SOCKET_FACTORY"}, 
+    {"name":"SOCKET_FACTORY_ARG"}, 
+    {"name":"SOCKET_TIMEOUT"}, 
+    {"name":"SSL"}, 
+    {"name":"SSL_CERT"}, 
+    {"name":"SSL_FACTORY"}, 
+    {"name":"SSL_FACTORY_ARG"}, 
+    {"name":"SSL_HOSTNAME_VERIFIER"}, 
+    {"name":"SSL_KEY"}, 
+    {"name":"SSL_MODE"}, 
+    {"name":"SSL_PASSWORD"}, 
+    {"name":"SSL_PASSWORD_CALLBACK"}, 
+    {"name":"SSL_ROOT_CERT"}, 
+    {"name":"SSPI_SERVICE_CLASS"}, 
+    {"name":"STRING_TYPE"}, 
+    {"name":"TARGET_SERVER_TYPE"}, 
+    {"name":"TCP_KEEP_ALIVE"}, 
+    {"name":"UNKNOWN_LENGTH"}, 
+    {"name":"USER"}, 
+    {"name":"USE_SPNEGO"}, 
+    {"name":"XML_FACTORY_FACTORY"}
+  ]
+},
+{
+  "name":"org.slf4j.Logger"
+},
+{
+  "name":"sun.misc.Unsafe",
+  "fields":[{"name":"theUnsafe"}],
+  "methods":[
+    {"name":"copyMemory","parameterTypes":["java.lang.Object","long","java.lang.Object","long","long"] }, 
+    {"name":"getAndAddLong","parameterTypes":["java.lang.Object","long","long"] }, 
+    {"name":"getAndSetObject","parameterTypes":["java.lang.Object","long","java.lang.Object"] }, 
+    {"name":"invokeCleaner","parameterTypes":["java.nio.ByteBuffer"] }
+  ]
+},
+{
+  "name":"sun.nio.ch.SelectorImpl",
+  "fields":[
+    {"name":"publicSelectedKeys", "allowUnsafeAccess":true}, 
+    {"name":"selectedKeys", "allowUnsafeAccess":true}
+  ]
+},
+{
+  "name":"sun.security.provider.MD5",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.NativePRNG",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name": "org.keycloak.provider.quarkus.QuarkusCacheManagerProvider",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+}, {
+  "name": "org.infinispan.configuration.parsing.Parser",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+}, {
+  "name": "org.keycloak.services.resources.ThemeResource",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+  {
+  "name": "org.keycloak.protocol.oidc.OIDCLoginProtocolService",
+  "allPublicMethods":true
+  },
+  {
+    "name": "io.quarkus.arc.runtime.CommandLineArgumentsProducer",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  }
+]

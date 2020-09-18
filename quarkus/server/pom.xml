@@ -74,6 +74,15 @@
                     <name>native</name>
                 </property>
             </activation>
+            <properties>
+                <quarkus.package.type>native</quarkus.package.type>
+                <quarkus.native.additional-build-args>
+                    --allow-incomplete-classpath,
+                    -H:ReflectionConfigurationFiles=../../../src/main/resources/native-image/reflect-config.json,
+                    -H:ResourceConfigurationFiles=../../../src/main/resources/native-image/resource-config.json,
+                    -H:+TraceClassInitialization
+                </quarkus.native.additional-build-args>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
